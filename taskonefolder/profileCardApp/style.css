@@ -21,8 +21,6 @@ body {
   text-align: center;
   padding: 50px;
   margin-top: 300px;
-
-
 }
 
 img {
@@ -47,24 +45,12 @@ img {
   transition-duration: 0.3s;
   transition: transform 0.3s ease-in-out;
 
-  /* transition: transform 0.3s ease-in-out;
-  transform: scale(1);
-  transform: scale(1.05) rotate(0deg);
-  will-change: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 0.3s;
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 0.3s;
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
-/* 
-.profile-card-img img:hover {
-  transform: scale(1.05) rotate(360deg);
-  transform: scale(1.1);
-} */
 
+.profile-card .info span{
+  color:#c42b3b;
+  font-style: italic;
+}
 
 
 .profile-card h1 {
@@ -75,11 +61,10 @@ img {
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  /* transform: translateX(-50%); */
   color: rgb(232, 227, 224);
 }
 
-.profile-card .time{
+.profile-card .time {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -91,19 +76,11 @@ img {
   right: 30%;
 }
 
-.profile-card .time p{
-  color: rgb(200, 5, 115);
-  background-color: rgba(164, 191, 208, 0);
-  margin: 5px;
-  font-weight: bold;
-
-
-}
 
 .profile-card .job-title {
   font-size: 20px;
   font-weight: bold;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
   color: red;
 }
 
@@ -122,21 +99,25 @@ img {
   text-decoration: underline;
 }
 
-.profile-card .bio-data{
-font-size: 12px;
-text-align: center;
-line-height: 18px;
+.profile-card .bio-data {
+  font-size: 13px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.profile-card .email-location p .fa-map-marker, .fa-envelope{
+  margin: 10px;
 }
 
 .profile-card .email-location,
 
-.profile-card .email-location p{
+.profile-card .email-location p {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 13px;
   color: #007bff;
-  
+
 }
 
 
@@ -145,8 +126,10 @@ line-height: 18px;
   flex-direction: row;
   gap: 40px;
   align-items: center;
-  justify-content: center; /* Center horizontally */
-  margin-top: 20px; /* Add spacing from the profile card content */
+  justify-content: center;
+  /* Center horizontally */
+  margin-top: 20px;
+  /* Add spacing from the profile card content */
 }
 
 .profile-card .socials .fa {
@@ -154,47 +137,50 @@ line-height: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px; 
-  height: 30px; 
-  border-radius: 50%; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
-  font-size: 20px; 
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  /* Soft shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-size: 20px;
 }
 
-.profile-card .socials .fa-github{
+.profile-card .socials .fa-github {
   color: #333;
 }
-.profile-card .socials .fa-linkedin{
-  color:#081dd9;
+
+.profile-card .socials .fa-linkedin {
+  color: #081dd9;
 }
-.profile-card .socials .fa-instagram{
-  color:#c42b3b;
+
+.profile-card .socials .fa-instagram {
+  color: #c42b3b;
 }
 
 /* Hover Effect */
 .profile-card .socials .fa:hover {
-  transform: scale(1.1); 
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
-.profile-card .socials img{
-  width: 28px; /* Set a fixed width */
-  height: 28oE
-  px; 
-  object-fit:cover;
+.profile-card .socials img {
+  width: 28px;
+  /* Set a fixed width */
+  height: 28oE px;
+  object-fit: cover;
   background: rgb(244, 244, 237);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   display: flex;
 
   align-items: center;
   justify-content: center;
-  border-radius: 50%; 
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-.profile-card .socials img:hover{
+
+.profile-card .socials img:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 
 }
-
