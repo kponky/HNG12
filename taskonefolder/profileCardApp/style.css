@@ -83,7 +83,7 @@ img {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 80px;
+  top: 10px;
   align-items: center;
   text-align: left;
   font-size: 13px;
@@ -92,7 +92,7 @@ img {
 }
 
 .profile-card .time p{
-  color: rgb(243, 6, 6);
+  color: rgb(200, 5, 115);
   background-color: rgba(164, 191, 208, 0);
   margin: 5px;
   font-weight: bold;
