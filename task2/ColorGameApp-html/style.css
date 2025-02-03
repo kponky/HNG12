@@ -146,7 +146,9 @@
 
 
 @media (max-width: 600px) {
-
+  .container-wrapper{
+    background-color: transparent;
+  }
   .header {
     font-size: 15px;
     padding-block: 20px;
@@ -154,12 +156,12 @@
 
   .color-game {
     width: 100%;
-    font-size: 13px;
+    font-size: 14px;
 
   }
 
   .game-score {
-    font-size: 13px;
+    font-size: 14px;
   }
 
 
