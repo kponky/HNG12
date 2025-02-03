@@ -1,0 +1,112 @@
+// const colorBox = document.getElementById('colorBox');
+// const colorOptions = document.querySelectorAll('.colorOption'); // Fixed: Added '.' for class selection
+// const gameStatus = document.getElementById('gameStatus');
+// const scoreElement = document.getElementById('gameScore');
+// const newGameBtn = document.getElementById('newGameBtn');
+
+// let gameScore = 0;
+// let targetColor;
+
+// const colors = ['blue', 'green', 'yellow', 'orange', 'red', 'purple']; // Fixed: Removed duplicate 'yellow'
+
+// // Function to start a new game
+// function startNewGame() {
+//   // Randomly select a target color
+//   targetColor = colors[Math.floor(Math.random() * colors.length)];
+//   colorBox.style.backgroundColor = targetColor;
+
+//   // Assign random colors to the buttons
+//   colorOptions.forEach(button => {
+//     const randomColor = colors[Math.floor(Math.random() * colors.length)];
+//     button.style.backgroundColor = randomColor;
+//   });
+
+//   // Reset game status
+//   gameStatus.textContent = '';
+// }
+
+// // Add event listeners to color buttons
+// colorOptions.forEach(button => {
+//   button.addEventListener('click', () => {
+//     if (button.style.backgroundColor === targetColor) {
+//       gameStatus.textContent = 'Correct!';
+//       gameScore++;
+//       scoreElement.textContent = gameScore;
+//       startNewGame(); // Start a new round after correct guess
+//     } else {
+//       gameStatus.textContent = 'Wrong! Try again.';
+//     }
+//   });
+// });
+
+// // Add event listener to the "New Game" button
+// newGameBtn.addEventListener('click', () => {
+//   gameScore = 0;
+//   scoreElement.textContent = gameScore;
+//   startNewGame();
+// });
+
+// // Start the game when the page loads
+// startNewGame();
+
+
+
+// const colorBox = document.getElementById('colorBox');
+// const colorOptions = document.querySelectorAll('.colorOption');
+// const gameStatus = document.getElementById('gameStatus');
+// const scoreElement = document.getElementById('gameScore');
+// const newGameBtn = document.getElementById('newGameBtn');
+
+// let gameScore = 0;
+// let targetColorCode;
+
+// const colors = {
+//   '#FF0000': 'red',
+//   '#00FF00': 'green',
+//   '#0000FF': 'blue',
+//   '#FFFF00': 'yellow',
+//   '#FFA500': 'orange',
+//   '#800080': 'purple'
+// };
+
+// function startNewGame() {
+//   const colorKeys = Object.keys(colors);
+//   const shuffledColors = [...colorKeys].sort(() => Math.random() - 0.5);
+
+//   targetColorCode = shuffledColors[0]; // Pick the first color as the correct one
+
+//   // Display the color code instead of actual color
+//   colorBox.textContent = targetColorCode;
+//   colorBox.style.backgroundColor = 'white'; // Keep background neutral for contrast
+
+//   // Shuffle the color keys to ensure all are unique in buttons
+//   const uniqueColors = shuffledColors.slice(0, colorOptions.length);
+
+//   // Place the colors in the buttons
+//   colorOptions.forEach((button, index) => {
+//     button.style.backgroundColor = colors[uniqueColors[index]];
+//   });
+
+//   gameStatus.textContent = '';
+// }
+
+// colorOptions.forEach(button => {
+//   button.addEventListener('click', () => {
+//     if (button.style.backgroundColor === colors[targetColorCode]) {
+//       gameStatus.textContent = 'Correct!';
+//       gameScore++;
+//       scoreElement.textContent = gameScore;
+//       startNewGame();
+//     } else {
+//       gameStatus.textContent = 'Wrong! Try again.';
+//     }
+//   });
+// });
+
+// newGameBtn.addEventListener('click', () => {
+//   gameScore = 0;
+//   scoreElement.textContent = gameScore;
+//   startNewGame();
+// });
+
+// startNewGame();
