@@ -16,23 +16,24 @@ const colors = {
   '#800080': 'purple'
 };
 
+// Function to shuffle and assign colors to buttons
+function shuffleButtons() {
+  const colorKeys = Object.keys(colors).sort(() => Math.random() - 0.5);
+  
+  colorOptions.forEach((button, index) => {
+    button.style.backgroundColor = colors[colorKeys[index]];
+  });
+}
+
 function startNewGame() {
   const colorKeys = Object.keys(colors);
-  const shuffledColors = [...colorKeys].sort(() => Math.random() - 0.5);
-
-  targetColorCode = shuffledColors[0]; // Pick the first color as the correct one
+  targetColorCode = colorKeys[Math.floor(Math.random() * colorKeys.length)]; // Pick a random color
 
   // Display the color code instead of actual color
   colorBox.textContent = targetColorCode;
   colorBox.style.backgroundColor = 'white'; // Keep background neutral for contrast
 
-  // Shuffle the color keys to ensure all are unique in buttons
-  const uniqueColors = shuffledColors.slice(0, colorOptions.length);
-
-  // Place the colors in the buttons
-  colorOptions.forEach((button, index) => {
-    button.style.backgroundColor = colors[uniqueColors[index]];
-  });
+  shuffleButtons(); // Shuffle button colors
 
   // Reset game status text and color
   gameStatus.textContent = '';
@@ -50,6 +51,7 @@ colorOptions.forEach(button => {
     } else {
       gameStatus.textContent = 'Wrong! Try again.';
       gameStatus.style.color = 'red'; // Red text for wrong answer
+      shuffleButtons(); // Reshuffle button colors even when the answer is wrong
     }
   });
 });
