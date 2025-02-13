@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 30px;
   border-radius: 40px;
   border: 1px solid #0E464F;
   background: #041E23;
@@ -163,7 +163,7 @@
 .ticket-selction-container .frame-2 .ticket-type .ticket-boxes {
   display: flex;
   padding: 16px;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   gap: 14px;
   border-radius: 24px;
@@ -178,10 +178,15 @@
   padding: 12px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
   border-radius: 12px;
   border: 1px solid #197686;
+  background: transparent;
+}
+
+.ticket-selction-container .frame-2 .ticket-type .ticket-boxes .ticket-box:hover {
+  border: 1px solid #197686;
   background: #12464E;
+
 }
 
 .ticket-selction-container .frame-2 .ticket-type .ticket-boxes .ticket-box h1 {
@@ -190,6 +195,8 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
+  line-height: 29.4px;
+  padding-bottom: 10px;
 }
 
 .ticket-selction-container .frame-2 .ticket-type .ticket-boxes .ticket-box span {
@@ -207,6 +214,9 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  line-height: 150%;
+  /* 24px */
+
 }
 
 .ticket-selction-container .frame-2 .ticket-select {
@@ -254,7 +264,7 @@
 }
 
 
-ticket-selction-container .frame-2 .ticket-select .input-select-field:focus {
+.ticket-selction-container .frame-2 .ticket-select .input-select-field:focus {
   border-color: #07373F;
   box-shadow: 0 0 5px rgba(7, 55, 63, 0.5);
 }
@@ -292,4 +302,88 @@ ticket-selction-container .frame-2 .ticket-select .input-select-field:focus {
 .ticket-selction-container .frame-2 .btns button:hover {
   background: #24A0B5;
   color: #FFF;
+}
+
+
+
+@media (max-width: 768px) {
+  .ticket-selction-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+
+  .ticket-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+
+  .ticket-selction-container .frame-2{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    margin-top: 30px;
+
+   
+  }
+
+  .ticket-selction-container .frame-2 .techember-heading{
+    width: 100%;
+    padding-inline: 20px;
+    height: fit-content;
+      }
+
+
+      .ticket-selction-container .frame-2 .techember-heading h1{
+        font-size: 34px;
+
+      }
+
+
+      .ticket-selction-container .frame-2 .techember-heading p {
+        width: 450px;
+        padding: 10px;
+        width: 260px;
+
+      }
+
+      .ticket-selction-container .techember-heading .event-details{
+        flex-direction: column;
+        margin-top: 48px;
+      }
+
+      .ticket-selction-container .techember-heading .event-details span:nth-child(2){
+        display: none;
+      }
+
+
+      .ticket-selction-container .frame-2 .ticket-type{
+        width: 100%;
+      }
+
+      .ticket-selction-container .frame-2 .ticket-type .ticket-boxes {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .ticket-selction-container .frame-2 .ticket-type .ticket-boxes .ticket-box {
+        width: 100%;
+      }
+
+
+      .ticket-selction-container .frame-2 .btns{
+        display: flex;
+        flex-direction: column;
+      }
+
+
+      
+
+     
+
+   
 }

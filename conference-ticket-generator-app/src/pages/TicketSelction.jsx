@@ -1,7 +1,10 @@
 import React from "react";
 import "../styles/TicketSelection.css";
+import { useNavigate } from "react-router-dom";
 
 const TicketSelction = () => {
+
+  const navigate = useNavigate();
   return (
     <div className="ticket-selction-container">
       <div className="ticket-heading">
@@ -40,13 +43,13 @@ const TicketSelction = () => {
               <p>20/52</p>
             </div>
             <div className="ticket-box">
-              <h1>Free</h1>
-              <span>REGULAR ACCESS</span>
+              <h1>$150</h1>
+              <span>VIP ACCESS</span>
               <p>20/52</p>
             </div>
             <div className="ticket-box">
-              <h1>Free</h1>
-              <span>REGULAR ACCESS</span>
+              <h1>$150</h1>
+              <span>VVIP ACCESS</span>
               <p>20/52</p>
             </div>
           </div>
@@ -68,7 +71,7 @@ const TicketSelction = () => {
 
         <div className="btns">
           <button>cancel</button>
-          <button>Next</button>
+          <button onClick={() => navigate ("/attendee-details")}>Next</button>
         </div>
       </div>
     </div>

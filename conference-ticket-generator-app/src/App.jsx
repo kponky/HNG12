@@ -1,5 +1,9 @@
 import { useState } from "react";
 import "./App.css";
+import "./styles/AttendeeDetails.css"
+import "./styles/TicketSelection.css";
+import "./styles/TicketBooked.css";
+import "./styles/Navbar.css";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import TicketSelction from "./pages/TicketSelction";
@@ -12,8 +16,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<TicketSelction />} />
-        <Route path="/" element={<AttendeeDetails />} />
-        <Route path="/" element={<TicketBooked />} />
+        <Route path="/attendee-details" element={<AttendeeDetails />} />
+        <Route path="/attende-booked" element={<TicketBooked />} />
       </Routes>
     </div>
   );
