@@ -17,7 +17,7 @@ const TicketBooked = () => {
   } = location.state || {};
 
   const handleBookAnotherTicket = () => {
-    navigate("/ticket-selection");
+    navigate("/");
   };
 
   const handleDownloadTicket = () => {

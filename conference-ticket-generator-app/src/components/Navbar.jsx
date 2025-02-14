@@ -1,8 +1,16 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import "../styles/Navbar.css";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+
+  const navigate = useNavigate(); // Initialize the navigate function
+
+  // Function to handle button click
+  const handleMyTicketClick = () => {
+    navigate("/ticket-booked"); // Navigate to the TicketBooked page
+  };
   return (
     <nav className="navbar">
       <div className="logo">
@@ -21,7 +29,7 @@ const Navbar = () => {
       </ul>
 
       <div className="btn">
-        <button>My Ticket</button>
+        <button onClick={handleMyTicketClick}>My Ticket</button>
         <BsArrowRight />
       </div>
     </nav>

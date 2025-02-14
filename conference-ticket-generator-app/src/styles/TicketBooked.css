@@ -255,3 +255,86 @@
   background: #24A0B5;
   color: #FFF;
 }
+
+
+@media (max-width: 768px) {
+
+  .tickectBooked-container {
+    width: 100%;
+    padding: 15px;
+    border: none;
+  }
+
+  .tickectBooked-container .ticket-heading{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  .ticket_wraps{
+    width: 100%;
+    height: auto;
+  }
+
+  .tickectBooked-container .mobile-view {
+    width: 100%;
+    border: 1px solid #0E464F;
+    border-radius: 24px;
+    padding: 32px 21px;
+
+
+  }
+
+  .tickectBooked-container .mobile-view  .inner-frame{
+    top: 250px;
+    bottom: 0;
+    width: auto;;
+    padding: 10px;
+  }
+
+  .tickectBooked-container .mobile-view  .inner-frame .uploaded-img{
+    width: 140px;
+    height: 130px;
+    object-fit: contain;
+  }
+
+  .tickectBooked-container .mobile-view  .inner-frame .tickets-info-wraper {
+    margin-top: 5px;
+
+  }
+
+  .ticket_wraps{
+    width: 100%;
+
+  }
+
+  .ticket-background {
+    width: 100%;
+  }
+
+  .tickectBooked-container .mobile-view  .inner-frame .tickets-info-wraper{
+    width: 90%;
+  }
+
+  .tickectBooked-container .mobile-view  .inner-frame .tickets-info-wraper .ticket-info{
+    width: 100%;
+  }
+
+  .tickectBooked-container .mobile-view  .inner-frame .barcode{
+    padding-top: 0;
+    width: auto;
+    height: auto;
+    background: transparent;
+  
+  }
+
+  
+.tickectBooked-container .mobile-view   .btns{
+  width: 100%;
+  flex-direction: column;
+}
+
+
+}
