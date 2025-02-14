@@ -306,6 +306,37 @@
 
 
 
+/* Selected Ticket Box */
+.ticket-selction-container .frame-2 .ticket-type .ticket-boxes .ticket-box.selected {
+  border: 1px solid #197686;
+  background: #12464E;
+}
+
+/* Error Message */
+.ticket-selction-container .frame-2  .error-message {
+  color: red;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ffe6e6;
+  border: 1px solid #ff9999;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Disabled Button */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: #ccc;
+}
+
+
+
 @media (max-width: 768px) {
   .ticket-selction-container {
     width: 100%;
